@@ -9,7 +9,7 @@ import json
 albums = json.load(sys.stdin)["results"]
 
 for album in albums:
-  print album["collectionName"]
+  print "%s - %s" % (album["artistName"], album["collectionName"])
 '
 
 
